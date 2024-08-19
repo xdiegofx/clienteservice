@@ -1,5 +1,12 @@
 package com.example.clienteservice.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Cliente {
 	
 	private String primerNombre;
@@ -9,9 +16,6 @@ public class Cliente {
 	private String telefono;
 	private String direccion;
 	private String ciudadResidencia;
-	
-	//Getters y Setters
-	
 	public String getPrimerNombre() {
 		return primerNombre;
 	}
@@ -54,8 +58,6 @@ public class Cliente {
 	public void setCiudadResidencia(String ciudadResidencia) {
 		this.ciudadResidencia = ciudadResidencia;
 	}
-	
-	//Getters y Setters
-	
+		
 	
 }
